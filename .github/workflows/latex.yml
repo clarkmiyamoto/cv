@@ -24,7 +24,7 @@ jobs:
       - name: Copy PDF to output folder
         run: |
           mkdir -p out
-          cp main.pdf out/
+          cp cv.pdf out/
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
