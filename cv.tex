@@ -1,0 +1,118 @@
+% Document class and font size
+\documentclass[a4paper,9pt]{extarticle}
+
+% Packages
+\usepackage[utf8]{inputenc} % For input encoding
+\usepackage{geometry} % For page margins
+\geometry{letterpaper, margin=0.75in} % Set paper size and margins
+\usepackage{titlesec} % For section title formatting
+\usepackage{enumitem} % For itemized list formatting
+\usepackage{hyperref} % For hyperlinks
+\usepackage{tabularx}
+\usepackage{fancyhdr}
+
+% Formatting
+\setlist{noitemsep} % Removes item separation
+\titleformat{\section}{\large\bfseries}{\thesection}{1em}{}[\titlerule] % Section title format
+\titlespacing*{\section}{0pt}{\baselineskip}{\baselineskip} % Section title spacing
+%%%%%%%%%%
+
+% Begin document
+\begin{document}
+
+% Disable page numbers
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}
+\fancyhead{}
+\fancyhead[L]{\textit{Clark Miyamoto}}
+\thispagestyle{empty} % Remove header from the first page
+
+% Header
+\begin{flushleft}
+\textbf{\LARGE Clark Miyamoto}\\[2pt] % Name
+PhD Student, NYU Physics | New York, United States.
+\\ \href{mailto:cm6627@nyu.edu}{cm6627@nyu.edu} | \href{https://www.linkedin.com/in/clarkmiyamoto}{linkedin.com/in/clarkmiyamoto} | \href{https://github.com/clarkmiyamoto}{GitHub/clarkmiyamoto} % Contact info
+\end{flushleft}
+
+% Education Section
+\section*{Education}
+\noindent
+\textbf{New York University} \hfill 2023 | Current\\
+Doctor of Philosophy, Physics  \hfill GPA: 3.97/4.00 \\ % Degree and GPA
+\emph{Honors:} MacCracken Fellowship
+
+\noindent\\
+\textbf{University of Southern California} \hfill 2019 |  2023\\
+Bachelor of Science, Physics \\
+\emph{Honors:} Discovery Scholar, Magna Cum Laude, Physics Department Undergraduate Representative
+
+% Experience Section
+\section*{Research Experience}
+\noindent
+\textbf{New York University,} \textit{Graduate Research Assistant} \hfill 2023 | Current\\
+Developed statistical inference methods under Prof. David Hogg.
+\begin{itemize}
+    \item Developed theory on hyperparameter tuning for affine invariant Hamiltonian Monte Carlo (HMC) methods.
+    \item Implemented novel HMC method into pythonic open-source library.
+    \item Developed theory on how Convolutional Neural Networks learned additional symmetries from training data, in collaboration with Soledad Villar.
+    \item Ran computational experiments on JAX \& PyTorch on High Performance Computing cluster.
+\end{itemize}
+
+\noindent
+Research rotations:
+\begin{itemize}
+    \item Dries Sels: Used Haar measure techniques to inspect expressivity of wavefunction ansatzs in the context of neural quantum states.
+    \item Daniel Stein: Developed spin glass inspired theory of how beliefs propagate between humans in sociological systems. Collaborated with psychologist Prof. Mirta Galesic \& cognitive scientist Prof. Henrik Olsson.
+\end{itemize}
+
+\noindent
+\textbf{University of Southern California,} \textit{Undergraduate Research Assistant} \hfill 2021 | 2023\\
+Design and simulate superconducting quantum devices under Prof. Eli Levenson-Falk.
+\begin{itemize}
+    \item Created a pythonic open-source library to expedite the design \& simulation of quantum devices, reducing turnaround time from 40 to 4 hours. 
+    \item Designed novel superconducting qubit devices which were part of published work.
+    \item Built and optimized radio frequency mixing system, DAC, and power supply for superconducting qubit control systems.
+\end{itemize}
+
+
+\section*{Publications}
+\begin{enumerate}
+    \item (In preparation) \textbf{Clark Miyamoto}, Yifan Chen, 2025, \emph{Hyperparameter tuning for affine invariant Hamiltonian Monte Carlo}.
+    \item (In preparation) \textbf{Clark Miyamoto}, Yifan Chen, David Hogg, 2025, \emph{h-emcee: pythonic affine invariant Hamiltonian Monte Carlo}.
+    
+    \item Vivek Maurya, Haimeng Zhang, Daria Kowsari, Andre Kuo, Darian M Hartsell, \textbf{Clark Miyamoto}, et al., 2024, \emph{On-demand driven dissipation for cavity reset and cooling}, PRX Quantum, \textbf{5}, 020321. 
+ 
+    \item Sadman Shanto, Andre Kuo, \textbf{Clark Miyamoto}, et al., 2024, \emph{SQuADDS: A validated design database and simulation workflow for superconducting qubit design}, Quantum, \textbf{8}, 1465.
+\end{enumerate}
+
+\section*{Conferences / Workshops}
+\begin{itemize}
+    \item Princeton Machine Learning Theory Summer School \hfill 2025\\
+    \noindent Poster: \emph{Hyperparameter tuning for affine invariant Hamiltonian Monte Carlo.}
+    \item IAIFI Summer School \hfill 2025
+    \item Beg Rohu Summer School of Physics: Learning with Machines, Physics and Minds. \hfill 2025\\
+    \noindent Poster: \emph{How CNNs learn additional symmetries.}
+    \item American Physics Society, March Meeting. \hfill 2023\\
+    Poster: \emph{Developing a library of modular superconducting qubit components for rapid device design.}
+\end{itemize}
+
+\section*{Selected Courses}
+\begin{itemize}
+    \item Data Science for Physicists
+    \item Machine Learning for Physicists
+    \item Inference and Representation (Audited)
+    \item Bayesian Machine Learning (Audited)
+    \item Stochastic Calculus (Audited) 
+    \item Stochastic Optimal Control for Finance (Audited)
+    \item Statistical Physics
+    \item Quantum Field Theory I \& II
+\end{itemize}
+
+\section*{Teaching}
+\textbf{Teaching Assistant} at New York University
+\begin{itemize}
+    \item PHYS-UA 91: Physics I for Majors \hfill Fall 2024
+    \item PHYS-UA 131: Electricity \& Magnetism I \hfill Fall 2025
+\end{itemize}
+
+\end{document}
