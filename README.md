@@ -1,4 +1,3 @@
-# cv
-Repo containing my CV (duh). 
+# My 𝓒𝓾𝓻𝓻𝓲𝓬𝓾𝓵𝓾𝓶 𝓥𝓲𝓽𝓪𝓮
 
-You can view the [compiled PDF](https://clarkmiyamoto.github.io/cv/cv.pdf)
+You can view it as a compiled PDF [here](https://clarkmiyamoto.github.io/cv/cv.pdf)
