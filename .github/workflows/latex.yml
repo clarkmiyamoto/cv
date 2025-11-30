@@ -17,9 +17,7 @@ jobs:
         uses: xu-cheng/latex-action@v3
         with:
           root_file: cv.tex
-      
-      - name: Rename PDF
-        run: mv cv.pdf Miyamoto_Clark_CV.pdf
+
       
       - name: Setup Pages
         uses: actions/configure-pages@v5
@@ -27,7 +25,7 @@ jobs:
       - name: Copy PDF to output folder
         run: |
           mkdir -p out
-          cp cv.pdf out/
+          cp cv.pdf out/Miyamoto_Clark_CV.pdf
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
