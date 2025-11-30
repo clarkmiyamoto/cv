@@ -18,6 +18,9 @@ jobs:
         with:
           root_file: cv.tex
       
+      - name: Rename PDF
+        run: mv cv.pdf Miyamoto_Clark_CV.pdf
+      
       - name: Setup Pages
         uses: actions/configure-pages@v5
       
