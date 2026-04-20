@@ -7,6 +7,7 @@
 \geometry{letterpaper, margin=0.75in} % Set paper size and margins
 \usepackage{titlesec} % For section title formatting
 \usepackage{enumitem} % For itemized list formatting
+\setlist[itemize]{label=\raisebox{0.4ex}{\tiny$\bullet$}}
 \usepackage{multicol} % For multi-column layouts
 \usepackage{hyperref} % For hyperlinks
 \usepackage{tabularx}
@@ -16,6 +17,9 @@
 \setlist{noitemsep} % Removes item separation
 \titleformat{\section}{\large\bfseries}{\thesection}{1em}{}[\titlerule] % Section title format
 \titlespacing*{\section}{0pt}{\baselineskip}{\baselineskip} % Section title spacing
+\newcommand{\cvitem}[2]{%
+  \item \parbox[t]{0.75\linewidth}{#1}\hfill\mbox{#2}%
+}
 %%%%%%%%%%
 
 % Begin document
@@ -31,37 +35,44 @@
 % Header
 \begin{flushleft}
 \textbf{\LARGE Clark Miyamoto}\\[2pt] % Name
-PhD Student, NYU Physics | New York, United States.
+PhD Student, NYU Center for Data Science | New York, United States.
 \\ \href{mailto:cm6627@nyu.edu}{cm6627@nyu.edu} | \href{https://www.linkedin.com/in/clarkmiyamoto}{linkedin.com/in/clarkmiyamoto} | \href{https://github.com/clarkmiyamoto}{GitHub/clarkmiyamoto} % Contact info
 \end{flushleft}
 
 % Education Section
 \section*{Education}
 \noindent
-\textbf{New York University} \hfill 2023 | Current\\
-Doctor of Philosophy, Physics  \hfill GPA: 3.97/4.00 \\ % Degree and GPA
-\emph{Honors:} MacCracken Fellowship
+\textbf{New York University} \hfill 2026 | Current\\
+Doctor of Philosophy in Data Science, Courant Institute % Degree and GPA
+
+\noindent\\
+\textbf{New York University} \hfill 2023 | 2026\\
+Masters of Science in Physics
 
 \noindent\\
 \textbf{University of Southern California} \hfill 2019 |  2023\\
-Bachelor of Science, Physics \\
-\emph{Honors:} Discovery Scholar, Magna Cum Laude, Physics Department Undergraduate Representative
+Bachelor of Science, Physics 
 
 % Experience Section
 \section*{Research Experience}
 \noindent
-\textbf{New York University,} \textit{Graduate Research Assistant} \hfill 2023 | Current\\
+\textbf{New York University} \textit{Graduate Research Assistant} \hfill 2026 | Current\\
+\noindent
+Developing measure transport methods for scientific computing problems under Eric Vanden-Eijnden \& Joan Bruna.\\
+
+\noindent
+\textbf{New York University,} \textit{Graduate Research Assistant} \hfill 2023 | 2026\\
 \noindent
 Research rotations:
 \begin{itemize}
     \item David Hogg: Developed theory on hyperparameter tuning for affine invariant Hamiltonian Monte Carlo (HMC) methods, implemented method in pythonic open-source library.
     \item Dries Sels: Used Haar measure techniques to inspect expressivity of wavefunction ansatzs in the context of neural quantum states.
-    \item Daniel Stein: Developed spin glass inspired theory of how beliefs propagate between humans in sociological systems. Collaborated with psychologist Prof. Mirta Galesic \& cognitive scientist Prof. Henrik Olsson.
+    \item Daniel Stein: Developed spin glass inspired theory of how beliefs propagate between humans in sociological systems. Collaborated with psychologist Mirta Galesic \& cognitive scientist Henrik Olsson.
 \end{itemize}
 
 \noindent
 \textbf{University of Southern California,} \textit{Undergraduate Research Assistant} \hfill 2021 | 2023\\
-Design and simulate superconducting quantum devices under Prof. Eli Levenson-Falk.
+Design and simulate superconducting quantum devices under Eli Levenson-Falk.
 \begin{itemize}
     \item Created a pythonic open-source library to expedite the design \& simulation of quantum devices, reducing turnaround time from 40 to 4 hours. 
     \item Designed novel superconducting qubit devices which were part of published work.
@@ -90,14 +101,22 @@ Design and simulate superconducting quantum devices under Prof. Eli Levenson-Fal
     Poster: \emph{Developing a library of modular superconducting qubit components for rapid device design.}
 \end{itemize}
 
+\newpage
+\section*{Awards}
+\begin{itemize}
+  \cvitem{Center for Data Science Fellowship: Covers tuition \& living expenses for 5 years.}{2026 | 2031}
+  \cvitem{MacCracken Fellowship: Covers tuition \& living expenses for 4 years.}{2023 | 2027}
+  \cvitem{Discovery Scholar: Awarded to University of Southern California undergraduates who have excelled academically and demonstrated a strong track record of research or creative work.}{2023}
+\end{itemize}
+
 \section*{Teaching}
 \textbf{Teaching Assistant} at New York University
 \begin{itemize}
+	\item PHYS-GA 2033: Machine Learning for Physicists \hfill Spring 2026
 	\item PHYS-UA 131: Electricity \& Magnetism I \hfill Fall 2025
     \item PHYS-UA 91: Physics I for Majors \hfill Fall 2024
 \end{itemize}
 
-\newpage
 \section*{Selected Courses Taken}
 * Denotes undergraduate courses.
 \begin{multicols}{2}
@@ -118,6 +137,8 @@ Design and simulate superconducting quantum devices under Prof. Eli Levenson-Fal
     \item Classical Mechanics
 \end{itemize}
 \end{multicols}
+
+
 
 \section*{Service}
 
